@@ -1,0 +1,75 @@
+form{
+     background-color: 2px solid rgb(188, 73, 73);
+     height: 200px;
+     width: 200px;
+}
+body {
+     display: flex;
+     margin-top: 150px;
+     background-image: url(signup.jpg);
+     background-repeat: no-repeat;
+     /* background-size: cover; */
+     background-size: 100% 150%;
+     font-family: Arial, sans-serif;
+ }
+ .container {
+     max-width: 400px;
+     margin: 0 auto;
+     background-color: #233225;
+     padding: 20px;
+     border-radius: 15px;
+     box-shadow: 0 0 10px rgba(100, 100, 100, 0.2);
+ }
+ h2 {
+     text-align: center;
+     color: #abfd4d;
+ }
+ label {
+     display: block;
+     margin-bottom: 8px;
+     color: #555;
+ }
+ input[type="text"],
+ input[type="password"] {
+     width: 100%;
+     padding: 10px;
+     margin-bottom: 10px;
+     border: 1px solid #ccc;
+     border-radius: 3px;
+ }
+ input[type="submit"] {
+     background-color: #007bff;
+     color: #fff;
+     border: none;
+     padding: 10px 20px;
+     cursor: pointer;
+ }
+ input[type="submit"]:hover {
+     background-color: #0056b3;
+ }
+ /* Define a class for the element with the moving border */
+.container {
+    
+    border: 2px solid transparent; /* Start with a transparent border */
+    border-radius: 10px;
+    animation: moveBorderColor 5s linear infinite; /* Animate the border color */
+}
+
+/* Define the animation keyframes */
+@keyframes moveBorderColor {
+    0% {
+        border-color: rgb(243, 238, 89); /* Initial border color */
+    }
+    25% {
+        border-color: aqua; /* Border color at 25% of the animation */
+    }
+    50% {
+        border-color: chartreuse; /* Border color at 50% of the animation */
+    }
+    75% {
+        border-color: orange; /* Border color at 75% of the animation */
+    }
+    100% {
+        border-color: chocolate; /* Return to the initial border color */
+    }
+}

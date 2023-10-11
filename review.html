@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Review - Title of the Game</title>
+    <link rel="stylesheet" href="review.css">
+</head>
+<body>
+    <header>
+        <h1><u>Game Review: Virtual Adventure</u></h1>
+    </header>
+
+    <nav class="mid">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="review.html">Game Reviews</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article>
+            <h2><u>Overview</u></h2>
+            <!-- Content for the "Overview" section here -->
+            <p>
+                Virtual Adventure is an immersive and thrilling gaming experience that transports players to a mesmerizing digital world filled with endless possibilities. Developed by the visionary team at Digital Realms Studios, this game promises to redefine the boundaries of gaming with its groundbreaking features and captivating gameplay.
+             </p>
+            
+             <h2><u>Graphics and Visuals</u></h2>
+             <p>
+                Virtual Adventure boasts stunning graphics and visuals that push the limits of what modern gaming hardware can achieve. The game's art style is a mesmerizing fusion of realism and surrealism, with each location in the Elysian Nexus exuding its own unique charm. Dynamic lighting, intricate details, and fluid animations create an immersive world that feels truly alive
+             </p>
+            
+             <h2><u>Gameplay</u></h2>
+             <p>
+                The gameplay in Virtual Adventure is nothing short of exhilarating. Players will find themselves navigating through intricate mazes, engaging in intense battles with otherworldly creatures, and solving mind-bending puzzles to progress. The controls are intuitive, ensuring that both novice and experienced gamers can dive right into the action.
+             </p>
+            
+             <h2><u>Story and Narrative</u></h2>
+             <p>
+                 Discuss the game's story, plot, and narrative elements. Mention any memorable characters and the impact of the story on the overall experience.
+             </p>
+            
+             <h2><u>Sound and Music</u></h2>
+             <p>T
+                he audio experience in Virtual Adventure is a symphony of sound effects and music that enhances every moment of the game. From the eerie echoes of the Elysian Nexus to the epic orchestral scores that accompany crucial story beats, the soundscapes are expertly designed to draw players deeper into the game's world.
+             </p>
+            
+             <h2><u>Final Thoughts</u></h2>
+             <p>
+                In summary, Virtual Adventure is a monumental achievement in gaming. Its stunning visuals, engaging gameplay, and captivating narrative combine to create an unforgettable gaming experience. Whether you're a seasoned gamer or new to the medium, Virtual Adventure promises to be a journey like no other, leaving players eagerly anticipating what lies beyond the horizon in this digital wonderland.
+             </p>
+            <!-- Other review sections -->
+
+            
+            <!-- Content for the "Final Thoughts" section here -->
+        </article>
+
+        <aside>
+           
+            <!-- Additional information content here -->
+            <h2><u>Additional Information</u></h2>
+            <ul>
+                <li><strong>Release Date:</strong> 01.01.2024</li>
+                <li><strong>Developer:</strong>Binit Patra</li>
+                <li><strong>Genre:</strong>Exploration,Combat, and Puzzle-solving</li>
+                <li><strong>Platform:</strong>Online & Offline</li>
+            </ul>
+        </aside>
+
+        <!-- User Review Section -->
+        <section id="user-review">
+            <h2><u>User Reviews</u></h2>
+            <form id="review-form">
+                <label for="username">Your Name:</label><br>
+                <input type="text" id="username" name="username" placeholder="Enter Your Name "  required><br><br>
+                
+                <label for="user-review">Your Review:</label><br>
+                <textarea id="user-review" name="user-review" rows="5" cols="100" required></textarea> <br><br>
+                
+                <button type="submit">Submit Review</button>
+            </form>
+        </section>
+    </main>
+    <script>
+        document.getElementById("review-form").addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent the form from submitting normally
+            
+            const username = document.getElementById("username").value;
+            const userReview = document.getElementById("user-review").value;
+            
+            // You can now use this data to save the user's review to a database or display it on the page.
+            
+            // For now, let's just alert the user's input.
+            alert("Thank you, " + username + "! Your review:\n" + userReview);
+        });
+    </script>
+    
+    <footer>
+        <p>&copy; 2023 Game Review Website</p>
+    </footer>
+
+    <!-- JavaScript code for handling user reviews can be placed here -->
+
+</body>
+</html>
+
+

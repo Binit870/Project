@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Adventure - Home</title>
+    <link rel="stylesheet" href="home.css">
+    <!-- <link rel="Image" href="Image/home.jpg"> -->
+</head>
+<body>
+    <header>
+        <h1><b><u>Welcome to Virtual Adventure</b>- <span id="username-placeholder"></span></u></h1>
+        <script>
+            // Assuming you have retrieved the username and stored it in a variable called 'username'
+            var username = "Binit"; // Replace with your actual username retrieval logic
+        
+            // Get a reference to the 'username-placeholder' span element
+            var usernamePlaceholder = document.getElementById("username-placeholder");
+        
+            // Update the content of the span element with the retrieved username
+            usernamePlaceholder.textContent = username;
+        </script>
+        
+
+        <p>Embark on an epic journey in the digital realm!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html"><u>Home</u></a></li>
+            <li><a href="about.html"><u>About Us</u></a></li>
+            <li><a href="review.html"><u>Reviews</u></a></li>
+            <li><a href="about.html"><u>Team</u></a></li>
+            <li><a href="contact.html"><u>Contact Us</u></a></li>
+        </ul>
+    </nav>
+    <audio controls autoplay loop>
+        <source src="Game music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <main>
+        <section id="game-description">
+            <h2>About Virtual Adventure</h2>
+            <p>
+                *Virtual Adventure* is a groundbreaking action-adventure game that immerses players in a captivating digital world. Explore breathtaking landscapes, solve challenging puzzles, and uncover the secrets of the Elysian Nexus.
+            </p>
+            <a href="review.html" class="button">Read Reviews</a>
+        </section>
+
+        <section id="latest-news">
+            <h2>Latest News</h2>
+            <article>
+                <h3>Experience the Thrills of the Elysian Nexus</h3>
+                <p>Discover the latest gameplay footage and screenshots that showcase the stunning visuals and exciting gameplay of *Virtual Adventure*.</p>
+                <br><a href="more.html" class="button">Read More</a>
+            </article>
+            <article>
+                <h3>Meet the Developers</h3>
+                <p>Learn about the talented team behind *Virtual Adventure* and their creative journey in bringing this digital wonderland to life.</p>
+                <br><a href="bout.html" class="button">Meet the Team</a>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Virtual Adventure. All rights reserved.</p>
+    </footer>
+</body>
+</html>
